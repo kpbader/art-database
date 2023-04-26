@@ -4,21 +4,21 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Home from './components/home-page/home-page';
-import SignIn from './components/sign-in/sign-in';
-import SignUp from './components/sign-up/sign-up';
+import Home from './components/Home/home';
+import Footer from './components/footer/footer';
 // import Gallery from './components/gallery/gallery';
 
 function App() {
   return (
+    <>
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/sign-up" element={<SignUp />} />
-        <Route path="/sing-in" element={<SignIn />} />
-
+        
       </Routes>
+      <Footer />
     </Router>
+    </>
   );
 }
 

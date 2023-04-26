@@ -1,0 +1,64 @@
+#sign-in-form h1{
+    color: white;
+    font-size: 40px;
+}
+
+.si-form-slot {
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#sign-in-btn {
+    width: 75px;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+#sign-in-btn:hover {
+    cursor: pointer;
+    background-color: rgb(157, 102, 247);
+    color: white;
+    transition: .3s ease;
+}
+
+#sign-up-link {
+    display: flex;
+    align-items: center;
+}
+
+#sign-up-link p {
+    color: white;
+    padding-right: 8px;
+}
+
+#sign-up-link a {
+    color: rgb(157, 102, 247);
+}
+
+#sign-up-link a:hover {
+    color: white;
+    transition: .3s ease;
+}
+
+#sign-in-form {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 175px;
+    margin-right: 100px; */
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 50px;
+    background-color: rgba(152, 151, 151, 0.1);
+    filter: drop-shadow(2px 4px 6px black);
+    width: 300px;
+    float: right;
+};
+
+

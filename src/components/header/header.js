@@ -1,4 +1,4 @@
-// import React, { useContext } from 'react';
+import React, { useContext } from 'react';
 // import { auth } from '../../firebase/index';
 // import { UserContext } from '../../context/user-context';
 import { Link } from 'react-router-dom';
@@ -12,27 +12,27 @@ const Header = () => {
             <div className="nav-logo">
                 <Link to="/">Art Database App</Link>
             </div>
-            <ul>
+            {/* <ul>
                 {
-                    // !user &&
+                    !user &&
                     <li>
                         <Link to="/sign-in">Sign In</Link>
                     </li>
                 }
                 {
-                    // user &&
-                    // <li onClick={() => auth.signOut()}>
+                    user &&
+                    <li onClick={() => auth.signOut()}>
                     <li>
                         Sign Out
                     </li>
                 }
                 {
-                    // !user &&
+                    !user &&
                     <li>
                         <Link to="/sign-up">Sign Up</Link>
                     </li>
                 }
-            </ul>
+            </ul> */}
         </nav>
     );
 };
