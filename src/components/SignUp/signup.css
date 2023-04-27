@@ -1,0 +1,76 @@
+
+#sign-up-page {
+    background-image: url('../../assets/images/adrianghenie1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+#sign-up-form h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.su-form-slot {
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+#sign-up-btn {
+    width: 75px;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: rgb(157, 102, 247);
+    color: white;
+}
+
+#sign-up-btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(157, 102, 247);
+    transition: .3s ease;
+}
+
+#su-btn-cancel-opt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#su-btn-cancel-opt a {
+    color: white;
+    font-size: 16px;
+}
+
+#su-btn-cancel-opt a:hover {
+    cursor: pointer;
+    color: silver;
+    transition: .3s ease;
+}
+
+#sign-up-form {
+    display: flex; 
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 10px; 
+    padding: 50px;
+    background-color: rgba(152, 151, 151, 0.25);
+    filter: drop-shadow(2px 4px 6px black);
+    width: 260px;
+};
+
+
+
+
+

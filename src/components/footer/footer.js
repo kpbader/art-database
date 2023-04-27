@@ -5,7 +5,7 @@ const Footer = () => {
 
     return (
         <div className="footer">
-            {year} Art Database 
+            {year} Art Database App
         </div>
     )
 };
