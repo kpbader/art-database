@@ -8,7 +8,7 @@ const SignInForm = () => {
         <form id="sign-in-form">
             <h1 id="sign-in-header">Sign in</h1>
             <input className="si-form-slot" placeholder="Email" />
-            <input className="si-form-slot" placeholder="Password" />
+            <input className="si-form-slot"  type="password" placeholder="Password" />
             <button id="sign-in-btn">Sign in</button>
             <div id="sign-up-link">
                 <p>Don't have an account?</p>
