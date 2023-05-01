@@ -14,20 +14,20 @@ function GalleryModal() {
                 Add To Gallery
             </Button>
 
-            <Modal show={show} onHide={handleClose} id="modal">
+            <Modal show={show} onHide={handleClose}>
                 <Modal.Header>
                     <h1>
                         Add a new piece to your collection
                     </h1>
-                    <span class="close" onClick={handleClose}>&times;</span>
+                    <p class="close" onClick={handleClose}>&times;</p>
                 </Modal.Header>
 
                 <Modal.Body>
                     <input placeholder="Title" className="galleryAddInput"/>
-                    <input placeholder="Title" className="galleryAddInput"/>
-                    <input placeholder="Title" className="galleryAddInput"/>
-                    <input placeholder="Title" className="galleryAddInput"/>
-                    <textarea />
+                    <input placeholder="Medium" className="galleryAddInput"/>
+                    <input placeholder="Dimensions" className="galleryAddInput"/>
+                    <input placeholder="Year" className="galleryAddInput"/>
+                    <textarea placeholder="Other notes"/>
                 </Modal.Body>
             </Modal>
         </>
