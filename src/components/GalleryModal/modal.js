@@ -10,16 +10,12 @@ function GalleryModal() {
 
     return (
         <>
-            <Button variant="primary" onClick={handleShow}>
-                Add To Gallery
-            </Button>
-
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header>
                     <h1>
                         Add a new piece to your collection
                     </h1>
-                    <p class="close" onClick={handleClose}>&times;</p>
+                    <span class="close" onClick={handleClose} style={{ fontSize: '22px'}}>&times;</span>
                 </Modal.Header>
 
                 <Modal.Body>
@@ -27,9 +23,13 @@ function GalleryModal() {
                     <input placeholder="Medium" className="galleryAddInput"/>
                     <input placeholder="Dimensions" className="galleryAddInput"/>
                     <input placeholder="Year" className="galleryAddInput"/>
-                    <textarea placeholder="Other notes"/>
+                    <textarea placeholder="Other notes" className="galleryAddText"/>
                 </Modal.Body>
             </Modal>
+
+            <Button variant="primary" onClick={handleShow}>
+                Add To Gallery
+            </Button>
         </>
     );
 }

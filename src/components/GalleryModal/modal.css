@@ -1,33 +1,10 @@
-.modal {
-    width: 25rem;
-    height: 100vh;
-};
-
-.modal-content {
-    display: flex;
-    /* flex-direction: column; */
-}
-
 .modal-header {
     display: flex;
     justify-content: space-between;
 }
 
-.galleryAddInput {
-    width: 250px;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-};
-
-
-
 .modal-body {
-    display: flex;
-    flex-direction: column;
+display: flex;
+flex-direction: column;
 };
-
-
-
-
 
