@@ -10,7 +10,7 @@ const Gallery = () => {
         <>
         <section id="gallery-page">
             <GalleryModal />
-            <button>Sign Out</button>
+            <button id="sign-out-btn">Sign Out</button>
         </section>
         </>
     );
