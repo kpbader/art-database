@@ -8,7 +8,9 @@ const UserContextProvider = ({ children }) => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+        
         const unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
+            
             if (userAuth) {
                 const userRef = await createUserProfileDocument(userAuth);
 
@@ -26,12 +28,16 @@ const UserContextProvider = ({ children }) => {
         });
 
         return () => unsubscribeFromAuth();
-    });
+    }, []);
 
-    const userContext = { user, loading };
+    const userData = { user, loading };
+    console.log(UserContext);
+    // if (loading) {
+    //     return <div>Loading...</div>
+    // }
 
     return (
-        <UserContext.Provider value={userContext}>
+        <UserContext.Provider value={userData}>
             {
                 children
             }

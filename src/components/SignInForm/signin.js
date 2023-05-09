@@ -25,7 +25,7 @@ const SignInForm = () => {
     const handleSubmit = async (values, { setSubmitting }) => {
         const { email, password } = values;
         try {
-            await auth.signInWithEmailAndPassword(email, password);
+           await auth.signInWithEmailAndPassword(email, password);
             setSubmitting(false);
             nav("/gallery");
         } catch (error) {
